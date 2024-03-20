@@ -34,7 +34,7 @@ const CustomNavbar = () => {
 
   return (
     <nav>
-      <Navbar fluid={true} className='fixed top-0 w-full bg-black z-10'>
+      <Navbar fluid={true} className='fixed top-0 w-full bg-black z-20'>
         <Navbar.Container className="flex items-center justify-between">
           <Navbar.Container className="flex items-center">
             <Navbar.Brand>
