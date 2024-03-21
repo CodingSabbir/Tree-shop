@@ -18,17 +18,17 @@ const BrandCategory = () => {
                 <BrandMovingCards  items={companyLogo}  />
                 
                 {/* cetegory image */}
-                <div className='mt-8 flex flex-col md:flex-row items-center gap-4'>
-                <p className='font-semibold uppercase md:-rotate-90 bg-[#65B741] text-black md:p-1.5 p-2 text-center inline-flex sm:rounded'>Explore new and popular tree</p>
+                <div className='my-8 flex flex-col md:flex-row justify-center items-center gap-4'>
+                
                 <div>
-                    <Link to={'/'}><img className='w-full h-[600px] hover:scale-105 transition-all duration-200' src="/src/assets/img/tree1.jpg" alt="" /></Link>   
+                    <Link to={'/'}><img className='w-full md:h-[300px] lg:h-[400px] xl:h-[490px] hover:scale-105 transition-all duration-200' src="/src/assets/img/tree1.jpg" alt="" /></Link>   
                 </div>
                 <div className='md:w-1/2'> 
                     <div className='grid grid-cols-2 gap-2'>
                     <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/tree2.jpg" alt="" /></Link> 
-                    <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/images/category/image3.png" alt="" /></Link> 
-                    <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/images/category/image4.png" alt="" /></Link> 
-                    <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/images/category/image5.png" alt="" /></Link> 
+                    <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/tree3.jpg" alt="" /></Link> 
+                    <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/tree6.jpg" alt="" /></Link> 
+                    <Link to={'/'}><img className='w-full hover:scale-105 transition-all duration-200' src="/src/assets/img/tree5.jpg" alt="" /></Link> 
                     </div>
                 </div>
                 </div>

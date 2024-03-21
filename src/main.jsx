@@ -9,6 +9,8 @@ import {
 import App from './App.jsx'
 import './index.css'
 import Home from "./home/Home.jsx";
+import SingleProduct from "./components/SingleProduct.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -18,7 +20,12 @@ const router = createBrowserRouter([
      {
       path: "/",
       element:<Home/>,
-     }
+     },
+     {
+      path: "/shop/:id",
+      element:<SingleProduct/>,
+     },
+  
     ]
    
   },
