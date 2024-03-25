@@ -3,24 +3,40 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = ({filterItems}) => {
     return (
-        <div className=' grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center shadow-sm gap-12'>
-            {
-               filterItems.map((item)=>(  
-                <div key={item.id}>
-                    <Link to={`/shop/${item.id}`}>
-                    <img className='mx-auto w-full hover:scale-105 transition-all duration-300' src={item.image} alt="product-img" data-aos="zoom-in"  data-aos-duration="2000"/>       
-                    </Link>
-                    <div className='mt-4 px-4'>
-                        <h1 className='text-[16px] capitalize font-semibold '>{item.title}</h1>
-                        <div className='flex justify-between'>
-                            <p className='text-slate-500 capitalize text-[16px]'>{item.category}</p>
-                            <p className='text-slate-950 capitalize text-[16px] font-mono'>${item.price}</p>
-                        </div>
-                    </div>
-                </div>
-               )) 
-            }
+       
+        <div className="p-1  flex flex-wrap items-center justify-center">
+   {
+    filterItems.map((item)=>(
+        <div key={item.id}>
+                 <div className="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg group">
+        <svg className="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform" viewBox="0 0 375 283" fill="none"
+            style={{ opacity: 0.1 }}>
+            <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+            <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+        </svg>
+        <div className="relative pt-10 px-10 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                style={{ background: 'radial-gradient(black, transparent 60%)', transform: 'rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)', opacity: 0.2 }}>
+            </div>
+          <Link to={`/shop/${item.id}`}>
+          <img className="relative w-40" src={item.image} alt=""/>
+          </Link>
         </div>
+        <div className="relative text-white px-6 pb-6 mt-6">
+            <span className="block opacity-75 -mb-1">Outdoor</span>
+            <div className="flex justify-between">
+                <span className="block font-semibold text-xl">Oak Tree</span>
+                <span className="block bg-white rounded-full text-purple-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$68.50</span>
+            </div>
+        </div>
+                </div>
+        </div>
+    ))
+   }
+    
+    </div>
+    
+   
     );
 };
 

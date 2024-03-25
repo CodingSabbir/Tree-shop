@@ -4,7 +4,7 @@
        "title":"The Story of Trees",
        "category": "Maple",
        "price": 63.85,
-        "image":"/src/assets/img/productTree1.jpg",
+        "image":"/src/assets/img/product2.png",
         "status": "Best Selers"
     },
     {
@@ -12,7 +12,7 @@
        "title":" the World of Trees ",
        "category": "Dogwood",
        "price": 130.00,
-       "image":"/src/assets/img/productTree2.jpg",
+       "image":"/src/assets/img/product1.png",
        "status": "Best Selers"
     },
     {
@@ -20,7 +20,7 @@
        "title":"Our Precious Trees",
        "category": "Maple",
        "price": 53.00,
-       "image":"/src/assets/img/productTree3.jpg",
+       "image":"/src/assets/img/product2.png",
        "status": "Best Selers"
     },
     {
@@ -28,7 +28,7 @@
        "title":" the Tree Kingdom",
        "category": "Oak",
        "price": 63.85,
-       "image":"/src/assets/img/productTree4.jpg",
+       "image":"/src/assets/img/product1.png",
        "status": "New Arriaval"
     },
     {
@@ -36,7 +36,7 @@
        "title":" Importance of Trees",
        "category": "Maple",
        "price": 236.00,
-       "image":"/src/assets/img/productTree5.jpg",
+       "image":"/src/assets/img/product2.png",
        "status": "New Arriaval"
     },
     {
@@ -44,7 +44,7 @@
        "title":" Trees on Our World",
        "category": "Abies ",
        "price": 198.00,
-       "image":"/src/assets/img/productTree6.jpg",
+       "image":"/src/assets/img/product1.png",
        "status": "Best Selers"
     },
     {
@@ -52,7 +52,7 @@
        "title":"A Tribute to Trees",
        "category": "Oak",
        "price": 120.50,
-       "image":"/src/assets/img/productTree7.jpg",
+       "image":"/src/assets/img/product2.png",
        "status": "Best Selers"
     },
     {
@@ -60,7 +60,7 @@
        "title":"The Majesty of Trees",
        "category": "Betula ",
        "price": 160.00,
-       "image":"/src/assets/img/productTree8.jpg"
+       "image":"/src/assets/img/product1.png"
     }
    
 ]

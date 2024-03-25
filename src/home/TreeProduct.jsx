@@ -3,6 +3,7 @@ import { FaFilter } from "react-icons/fa";
 import ProductCard from '../components/ProductCard';
 import Section from '../components/Section';
 import aboutExpress from '../assets/img/plant.png'
+
 const TreeProduct = () => {
 const [product,setProduct]=useState([])
 const [filterItems,setFilterItems]=useState([])
@@ -60,16 +61,17 @@ const handleSortChange = (option)=>{
    setFilterItems (sortItems)
 }
     return (
-       <div className='max-w-screen-2xl xl:px-28 px-4 '>
+       <div className='max-w-screen-2xl   '>
          <div className='py-5'>
             <Section sectionImg={aboutExpress} text1='Greening Our Future' text2=''/>
         </div>
-       <div className='flex flex-col md:flex-row flex-wrap md:justify-between items-center space-y-3 mb-8'>
-       <div className='flex flex-row md:justify-start flex-wrap md:items-center gap-4 md:gap-8 font-semibold'>
-            <button onClick={showProduct} className='capitalize text-[16px]'>all Tree</button>
+       <div className='flex flex-col md:flex-row flex-wrap md:justify-between items-center md:px-28  xl:px-40 space-y-3 mb-8'>
+       <div className='flex flex-row md:justify-start flex-wrap md:items-center gap-4 md:gap-8 font-thin'>
+            <button onClick={showProduct} className='capitalize text-[16px] '>all-Tree</button>
             <button onClick={()=>filterProduct('Maple')} className='capitalize text-[16px]'>Maple </button>
             <button onClick={()=>filterProduct('Oak')} className='capitalize text-[16px]'>Oak</button>
-            <button onClick={()=>filterProduct('Dogwood')} className='capitalize text-[16px]'>Dogwood </button>
+            <button onClick={()=>filterProduct('Dogwood')} className='capitalize text-[16px]'>Dogwood </button> 
+            
         </div>
         <div className='flex justify-end mb-4 rounded-sm'> 
             <div className='bg-black p-2 py-1 '><FaFilter className='text-white w-4 h-4' /></div>
